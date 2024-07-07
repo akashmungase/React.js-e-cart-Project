@@ -1,13 +1,16 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home/home'
+import Laptops from '../pages/laptops'
+import HorizontalNavbar from "../components/layout/Horizontal/horizontalNavbar";
 
 function Routing() {
-    return(
+    return (
         <div>
-             <BrowserRouter>
+            <BrowserRouter>
+                <HorizontalNavbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/* <Route path="/" element={<ProtectedRoute Component={Home} />} /> */}
+                    <Route path="/laptops" element={<Laptops />} />
                     {/* <Route path="/login" element={<Login />} /> */}
                     {/* <Route path="/about" element={<About />} /> */}
                     {/* <Route path="/*" element={<Page404 />} /> */}

@@ -4,7 +4,6 @@ import feather from 'feather-icons';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser as faRegularCircleUser } from '@fortawesome/free-regular-svg-icons';
-import HorizontalNavbar from '../Horizontal/horizontalNavbar';
 
 function Header() {
 
@@ -41,7 +40,6 @@ function Header() {
                     </Col>
                 </Row>
             </Container>
-            <HorizontalNavbar />
         </div>
     );
 }

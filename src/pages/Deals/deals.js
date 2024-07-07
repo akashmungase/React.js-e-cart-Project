@@ -6,7 +6,7 @@ function Deals() {
         <Container>
             <Row className='py-5'>
                 <Col md='6'>
-                    <div class='image-container'>
+                    <div className='image-container'>
                         <div className='deal-1-text'>
                             <span>Holiday Deals</span   >
                             <h2>
@@ -20,11 +20,11 @@ function Deals() {
                     </div>
                 </Col>
                 <Col md='6'>
-                    <div class='image-container'>
+                    <div className='image-container'>
                         <div className='deal-1-text'>
                             <span>Just In</span>
                             <h2>
-                                Take Your <br />
+                                Take Your 
                                 Sound <br />
                                 Anywhere
                             </h2>

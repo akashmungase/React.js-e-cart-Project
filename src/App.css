@@ -1,3 +1,26 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.fixed-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.App {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.App::-webkit-scrollbar {
+    width: 0;
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
