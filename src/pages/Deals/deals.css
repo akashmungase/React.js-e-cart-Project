@@ -1,0 +1,27 @@
+.image-container {
+    position: relative;
+    /* Ensure the container is positioned relative */
+    display: inline-block;
+    /* Ensure container takes only as much space as necessary */
+}
+
+.deal-1-text {
+    position: absolute;
+    /* Position the text absolutely within the container */
+    top: 20%;
+    left: 12%;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.deal-1 {
+    display: block;
+    /* Ensure image behaves like a block element */
+    width: 100%;
+    /* Adjust image width as needed */
+    height: auto;
+    /* Maintain image aspect ratio */
+    z-index: 0;
+    /* Ensure image is behind the text */
+}

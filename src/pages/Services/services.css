@@ -1,0 +1,15 @@
+.images-style {
+    width: 80px;
+    height: 80px;
+}
+
+.font-larger {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

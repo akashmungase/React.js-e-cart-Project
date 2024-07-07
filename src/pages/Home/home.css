@@ -1,0 +1,14 @@
+.home-background {
+  background-image: url('/public/assets/images/bg-home.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 610px;
+}
+
+.home-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
