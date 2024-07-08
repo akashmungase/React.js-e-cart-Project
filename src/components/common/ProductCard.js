@@ -9,11 +9,11 @@ function ProductCard({ Props }) {
     }, [Props]);
 
     return (
-        <Container>
+        <Container className="text-center mt-4">
             {
                 Props.map((item, i) =>
-                    <Card style={{ width: '18rem' }} key={i} className="d-inline-block ">
-                        <Card.Img variant="top" src="/assets/images/laptop.webp" />
+                    <Card style={{ width: '18rem' }} key={i} className="d-inline-block m-2">
+                        <Card.Img variant="top" src={item?.image_url} style={{width: '285px', height: '232px'}}/>
                         <Card.Body>
                             <Card.Text>
                                 {item?.product_desc}
