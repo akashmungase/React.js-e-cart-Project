@@ -1,35 +1,21 @@
-import React, { useState } from 'react';
-import { FaStar } from 'react-icons/fa';
+import React from 'react';
 
-const StarRating = () => {
-  const [rating, setRating] = useState(null);
-  const [hover, setHover] = useState(null);
+const Rating = ({ value, max }) => {
+  const Star = ({ filled }) => (
+    <span style={{ color: filled ? '#751fff' : 'gray', fontSize: "25px" }}>
+      ★
+    </span>
+  );
+
+  const stars = Array.from({ length: max }, (_, i) => i + 1);
 
   return (
     <div>
-      {[...Array(5)].map((star, index) => {
-        const ratingValue = index + 1;
-
-        return (
-          <label key={index}>
-            <input
-              type="radio"
-              name="rating"
-              value={ratingValue}
-              onClick={() => setRating(ratingValue)}
-              style={{ display: 'none' }}
-            />
-            <FaStar
-              size={30}
-              color={ratingValue <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
-              onMouseEnter={() => setHover(ratingValue)}
-              onMouseLeave={() => setHover(null)}
-            />
-          </label>
-        );
-      })}
+      {stars.map(star => (
+        <Star key={star} filled={star <= value} />
+      ))}
     </div>
   );
 };
 
-export default StarRating;
+export default Rating;
