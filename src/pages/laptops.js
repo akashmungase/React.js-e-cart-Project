@@ -1,7 +1,9 @@
+import ProductCard from "../components/common/ProductCard";
+
 function Laptops() {
     return(
         <div>
-            <h1>Laptops</h1>
+            <ProductCard/>
         </div>
     )
 }

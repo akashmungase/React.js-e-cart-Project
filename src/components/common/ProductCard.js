@@ -1,20 +1,23 @@
-import { Button, Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
+import StarRating from "./starRating";
 
 function ProductCard() {
     return (
-        <div>
+        <Container>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="/assets/images/laptop.webp" />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
+                    {/* <Card.Title>Card Title</Card.Title> */}
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                        Pilates 14" Touch Screen Laptop 12GB Memory
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <b className="text-primary">
+                        $85.00
+                    </b>
+                    <StarRating />
                 </Card.Body>
             </Card>
-        </div>
+        </Container>
     )
 }
 
